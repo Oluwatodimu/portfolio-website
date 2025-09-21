@@ -7,11 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
-  "homepage": "https://oluwatodimu.github.io/portfolio-website",
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
     "react": "^19.1.1",
