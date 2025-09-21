@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://oluwatodimu.github.io/portfolio-site/",
+  "homepage": "https://oluwatodimu.github.io/portfolio-website/",
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
     "react": "^19.1.1",
