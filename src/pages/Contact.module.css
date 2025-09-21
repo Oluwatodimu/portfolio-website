@@ -1,0 +1,109 @@
+.contact {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  padding: 2rem;
+}
+
+/* Side-by-side layout */
+.content {
+  display: flex;
+  align-items: stretch;     /* image matches text height */
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Image column */
+.imageWrapper {
+  flex-shrink: 0;
+}
+
+.profileImage {
+  width: 400px;          /* ⬆️ increased from 320px */
+  max-width: 100%;       /* keeps it responsive */
+  height: auto;          /* maintain aspect ratio */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Text column */
+.textBlock {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.email {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #ffd54f;           
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;   
+  border: 2px solid #ffd54f; 
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  width: fit-content;       
+}
+
+
+.email:hover {
+  background-color: #ffd54f; 
+  color: #1e1e1e;          
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialLinks a {
+  font-size: 1.5rem;
+  color: #f5f5f5;
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #0077b5;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profileImage {
+    width: 240px;        /* smaller image on small screens */
+    margin-bottom: 1.5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .description,
+  .email {
+    font-size: 1rem;
+  }
+}

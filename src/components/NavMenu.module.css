@@ -1,0 +1,48 @@
+.navMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #444;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease;
+}
+
+.navMenu.open {
+  right: 0;
+}
+
+.navMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navMenu li {
+  margin: 1rem 0;
+}
+
+.navMenu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: #ff4d4d; /* Example hover color for close button */
+}

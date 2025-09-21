@@ -1,0 +1,77 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* center the inner container horizontally */
+  align-items: center;       /* center it vertically */
+  background-color: #1e1e1e;
+  padding: 2rem;
+}
+
+.heroContent {
+  max-width: 700px;          /* control line length */
+  width: 100%;
+  text-align: left;          /* keep all text left-aligned */
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffd54f;      
+  margin-bottom: 1.5rem;
+}
+
+
+.heroContent p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #fcfafa;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.socialLinks a {
+  font-size: 1.5rem;
+  color: #e3d3d3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #0077b5;
+}
+
+.workButton {
+  padding: 0.8rem 1.5rem;
+  background-color: transparent; /* 🔹 empty inside */
+  color: #ffd54f; /* 🔹 yellow text */
+  border: 2px solid #ffd54f; /* 🔹 yellow outline */
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.workButton:hover {
+  background-color: #ffd54f; /* 🔹 fill yellow on hover */
+  color: #1e1e1e; /* 🔹 text becomes dark on hover for contrast */
+}
+
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+  .heroContent p {
+    font-size: 1rem;
+  }
+}
