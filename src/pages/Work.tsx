@@ -14,7 +14,7 @@ const companies = [
     website: 'https://corporate.payu.com/',
     location: 'Amsterdam, North Holland',
     role: 'Backend Engineer (Full-time)',  
-    description: 'As a Backend Engineer at PayU, I optimized and scaled a high-volume transaction processing middleware handling over $150K daily. My key achievements include reducing transaction latency by 30% through caching and database optimizations, and scaling system capacity by 1.5x by implementing an asynchronous, event-driven architecture. I also designed a real-time monitoring framework that slashed critical incident response time by 50%, while contributing to DevOps cycles to enhance overall system reliability and efficiency.',
+    description: 'Scaled a $150K+/day transaction platform 1.5× with an asynchronous, event-driven architecture while cutting latency 30% through caching and database optimizations. Designed real-time monitoring that halved critical incident response time and strengthened overall reliability through targeted DevOps improvements.',
     thumbnail: payuThumb,
   },
   {
@@ -22,7 +22,7 @@ const companies = [
     website: 'https://flutterwave.com/ng/',
     location: 'San Fransisco, USA',
     role: 'Backend Engineer (Full-time)',
-    description: 'Engineered and maintained high-performance, secure backend services for a global financial platform. Built a centralized authorization system to standardize secure access across all services. Developed a high-volume data processing application that screens over 150,000 entities daily for compliance. Built a real-time decisioning platform that processes millions of transactions daily, enabling instant risk assessment and reducing operational costs by 50%. Optimized system performance and resilience through advanced caching, parallel processing, and robust fault-tolerant design.',
+    description: 'Developed secure, high-performance backend services for a global financial platform. Built centralized authorization, a compliance app screening 150K+ entities daily, and a real-time decisioning system handling millions of transactions for instant risk assessment and 50% lower costs. Boosted performance and resilience with advanced caching, parallel processing, and fault-tolerant design.',
     thumbnail: flutterwaveThumb,
   },
   {
@@ -30,7 +30,7 @@ const companies = [
     website: 'https://polarisdigitech.net/',
     location: 'Lagos, Nigeria',
     role: 'Backend Engineer (Full-time)',  
-    description: 'As a Backend Engineer at Polaris Digitech Ltd, I developed and maintained robust backend systems for enterprise clients across GIS domains. I created CI/CD pipelines to automate build, test, and deployment processes to Google Cloud Platform (GCP) App Engine, significantly improving deployment efficiency and reliability. Additionally, I made critical security enhancements for an Address Management Platform, which successfully reduced the risk of brute-force attacks and improved system performance.',
+    description: 'Developed and maintained backend systems for enterprise GIS clients, creating CI/CD pipelines that automated build, test, and deployment to GCP App Engine, boosting release speed and reliability. Implemented key security upgrades for an Address Management Platform, cutting brute-force attack risk and improving overall performance.',
     thumbnail: polarisThumb,
   },
   {
@@ -38,7 +38,7 @@ const companies = [
     website: 'https://www.linkedin.com/company/stakefair/',
     location: 'Senkang, Singapore',
     role: 'Backend Engineer (Full-time)',  
-    description: 'As a Backend Engineer at Stakefair, I was a key contributor to the development of critical financial services that processed over $2M in user transactions. I played a vital role in the major architectural overhaul, assisting in the migration from a monolithic system to a microservices architecture. To help streamline our development process, I implemented containerization using Docker and contributed to building automated CI/CD pipelines with GitHub Actions, which enhanced our deployment frequency and system reliability.',
+    description: 'Played a pivotal role in developing financial services processing $2M+ in user transactions and in migrating from a monolithic system to microservices for improved scalability. Designed and implemented Docker-based containerization and automated CI/CD pipelines with GitHub Actions, increasing deployment frequency, stability, and overall system reliability.',
     thumbnail: stakefairThumb,
   },
   {
@@ -46,7 +46,7 @@ const companies = [
     website: 'https://savespendr-web.vercel.app/',
     location: 'Lagos, Nigeria',
     role: 'Backend Engineer, Lead (Contract)',  
-    description: 'Orchestrated the end-to-end design, development, and infrastructure management for SaveSpendr. This included architecting the cloud infrastructure, deploying the application as a containerized service on AWS ECS, and establishing automated CI/CD pipelines. Development was guided by a strict adherence to code best practices (including code reviews and SOLID principles) and OWASP security guidelines, forming a highly secure and maintainable foundation for the platform.',
+    description: 'Orchestrated the full design, development, and infrastructure setup for the platform, architecting cloud infrastructure and deploying a containerized service on AWS ECS with Fargate. Built automated CI/CD pipelines and followed SOLID principles, thorough code reviews, and OWASP security standards to deliver a secure, scalable, and maintainable foundation.',
     thumbnail: savespendrThumb,
   },
   {
@@ -54,7 +54,7 @@ const companies = [
     website: 'https://www.fintraksoftware.com/',
     location: 'Lagos, Nigeria',
     role: 'Backend Engineer (Full-time)',  
-    description: 'As a Backend Engineer at FinTrak, I contributed to the development of a leading credit scoring platform. My key responsibilities included designing and delivering a suite of robust RESTful APIs that served as the backbone for the platform\'s services. Additionally, I built, trained, and optimized machine learning models focused on predicting borrower risk.',
+    description: 'Contributed to a leading credit scoring platform by designing and delivering robust RESTful APIs that powered key backend services. Built, trained, and optimized machine learning models to predict borrower risk, and improved data pipelines and system performance to support accurate, scalable credit assessments.',
     thumbnail: fintrakThumb,
   },
 ];

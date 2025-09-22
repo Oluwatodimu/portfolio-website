@@ -67,12 +67,12 @@
   text-decoration: underline;
 }
 
-/* Default paragraph text */
 .card p {
-  margin: 0.5rem 0;
-  color: #ccc;
-  font-size: 0.9rem;
-  text-align: left; /* left-align description */
+    margin: 0.5rem 0;
+    color: #ccc;
+    font-size: 0.9rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* Smaller font for meta info (location, employment type) */

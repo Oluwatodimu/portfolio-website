@@ -51,10 +51,11 @@
 }
 
 .card p {
-  font-size: 0.9rem;
-  margin: 0.5rem 0;
-  color: #ccc;
-  text-align: left; 
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: #ccc;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .tools {

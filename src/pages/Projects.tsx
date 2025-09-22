@@ -9,7 +9,7 @@ const projects = [
   {
     title: 'Authorization Server',
     link: 'https://github.com/Oluwatodimu/savespendr-v2',
-    description: 'Designed and implemented a secure, custom OAuth 2.0 authorization server supporting multiple grant types (Authorization Code, Client Credentials) for user authentication and secure service-to-service communication in a microservices architecture, with Role-Based Access Control (RBAC).',
+    description: 'Designed and implemented a secure, custom OAuth 2.0 authorization server supporting multiple grant types for user authentication and secure service to service REST communication within a microservices architecture, with role based access control (RBAC).',
     tools: ['Spring boot', 'Keycloak', 'Docker', 'MySQL'],
     thumbnail: projectAThumb,
   },
