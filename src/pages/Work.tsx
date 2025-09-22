@@ -7,6 +7,7 @@ import polarisThumb from '../assets/polaris-thumb.jpg';
 import stakefairThumb from '../assets/stakefair-thumb.jpg';
 import savespendrThumb from '../assets/savespendr-thumb.jpg';
 import fintrakThumb from '../assets/fintrak-thumb.jpg';
+import woodcoreThumb from '../assets/woodcore-thumb.jpg';
 
 const companies = [
   {
@@ -41,6 +42,14 @@ const companies = [
     description: 'Played a pivotal role in developing financial services processing $2M+ in user transactions and in migrating from a monolithic system to microservices for improved scalability. Designed and implemented Docker-based containerization and automated CI/CD pipelines with GitHub Actions, increasing deployment frequency, stability, and overall system reliability.',
     thumbnail: stakefairThumb,
   },
+    {
+        name: 'Woodcore',
+        website: 'https://www.woodcore.co/',
+        location: 'San Fransisco, USA',
+        role: 'Backend Engineer (Contract)',
+        description: 'Built and maintained scalable backend services and REST APIs. Implemented secure authentication and authorization, containerized applications for efficient multi-environment deployment, and developed CI/CD pipelines for automated, zero-downtime releases. Set up monitoring and logging and deployed microservices on AWS ECS for scalable, reliable operations.',
+        thumbnail: woodcoreThumb,
+    },
   {
     name: 'Savespendr',
     website: 'https://savespendr-web.vercel.app/',
