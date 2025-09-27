@@ -42,10 +42,10 @@
 }
 
 .tagline {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #e0e0e0;
-  margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffd54f;   /* 🔹 changed from #e0e0e0 to yellow */
+    margin-bottom: 1.2rem;
 }
 
 .description {
