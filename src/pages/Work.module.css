@@ -1,70 +1,135 @@
-/* Grid container */
-.workGrid {
-  width: 100%;
-  max-width: 1200px; /* limit the grid width like Projects page */
-  margin: 0 auto;    /* center the grid */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns desktop */
-  gap: 1.5rem;
-  padding: 2rem;
-  background-color: #1e1e1e;
-  color: #f5f5f5;
-  min-height: 100vh;
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #1e1e1e;
+    color: #fcfafa;
+    text-align: left;
 }
 
-/* Card styling */
+.breadcrumb ol {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.breadcrumb li + li::before {
+    content: "›";
+    color: #ffd54f;
+    padding: 0 0.6rem;
+    font-size: 1.25rem;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #e3d3d3;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #ffd54f;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding: 0.8rem 1rem;
+    }
+    .breadcrumb ol {
+        font-size: 1.1rem;
+    }
+    .breadcrumb li + li::before {
+        font-size: 1.1rem;
+    }
+}
+
+/* ---------- Heading ---------- */
+.heading {
+    /* Align heading with the work grid cards */
+    max-width: 1200px;
+    margin: 0 auto;              /* center heading container */
+    background: #1e1e1e;
+    color: #ffd54f;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem 0 0;           /* top padding only, no side padding */
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.75rem;
+    }
+}
+
+/* ---------- Work Grid ---------- */
+.workGrid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* ---------- Card ---------- */
 .card {
-  background-color: #2a2a2a;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* align content to top */
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
 
-/* Thumbnail image */
+/* ---------- Thumbnail ---------- */
 .card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;      /* fills container while maintaining aspect ratio */
-  object-position: top;   /* shows top of image (logo visible) */
-  display: block;
-  border-radius: 8px 8px 0 0; /* round top corners */
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 8px 8px 0 0;
 }
 
-/* Card content */
+/* ---------- Card Content ---------- */
 .cardContent {
-  padding: 1.5rem;
+    padding: 1.5rem;
 }
 
-/* Card title */
 .card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.3rem;
-  color: #f5f5f5;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: #f5f5f5;
 }
 
-/* Company website link */
 .companyLink {
-  display: inline-block;
-  margin-bottom: 0.8rem;
-  color: #ffd54f;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.85rem;
-  transition: color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    color: #ffd54f;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
 }
 
 .companyLink:hover {
-  color: #ffeb3b;
-  text-decoration: underline;
+    color: #ffeb3b;
+    text-decoration: underline;
 }
 
 .card p {
@@ -75,26 +140,24 @@
     text-justify: inter-word;
 }
 
-/* Smaller font for meta info (location, employment type) */
 .meta {
-  font-size: 0.8rem;
-  color: #ccc;
+    font-size: 0.8rem;
+    color: #ccc;
 }
 
-/* Strong tags inside paragraphs */
 .card p strong {
-  color: #fff;
+    color: #fff;
 }
 
-/* Responsive layout */
+/* ---------- Responsive Grid ---------- */
 @media (max-width: 1024px) {
-  .workGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .workGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 640px) {
-  .workGrid {
-    grid-template-columns: 1fr;
-  }
+    .workGrid {
+        grid-template-columns: 1fr;
+    }
 }

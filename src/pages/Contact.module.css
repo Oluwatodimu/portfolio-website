@@ -107,3 +107,40 @@
     font-size: 1rem;
   }
 }
+
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #1e1e1e;
+    color: #fcfafa;
+    text-align: left;
+}
+
+.breadcrumb ol {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.breadcrumb li + li::before {
+    content: "›";
+    color: #ffd54f;
+    padding: 0 0.6rem;
+    font-size: 1.25rem;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #e3d3d3;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #ffd54f;
+}
+

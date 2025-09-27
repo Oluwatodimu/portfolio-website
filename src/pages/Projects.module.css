@@ -1,53 +1,120 @@
-.projectsGrid {
-  width: 100%;
-  max-width: 1200px; /* optional: limit grid width */
-  margin: 0 auto;    /* center the grid */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns desktop */
-  gap: 1.5rem;
-  padding: 2rem;
-  background-color: #1e1e1e; /* dark background matching Work page */
-  color: #f5f5f5;
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #1e1e1e;
+    color: #fcfafa;
+    text-align: left;
 }
 
-/* Card styling matching Work page */
+.breadcrumb ol {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.breadcrumb li + li::before {
+    content: "›";
+    color: #ffd54f;
+    padding: 0 0.6rem;
+    font-size: 1.25rem;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #e3d3d3;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #ffd54f;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding: 0.8rem 1rem;
+    }
+    .breadcrumb ol {
+        font-size: 1.1rem;
+    }
+    .breadcrumb li + li::before {
+        font-size: 1.1rem;
+    }
+}
+
+/* ---------- Page Heading ---------- */
+.heading {
+    max-width: 1200px;      /* aligns with grid below */
+    margin: 0 auto;
+    background: #1e1e1e;
+    color: #ffd54f;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem 0 0;      /* top padding only */
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 1.75rem;
+    }
+}
+
+/* ---------- Projects Grid ---------- */
+.projectsGrid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+/* ---------- Card ---------- */
 .card {
-  background-color: #2a2a2a;
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* align content to top */
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
 
 .card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #f5f5f5;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #f5f5f5;
 }
 
 .projectLink {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: #ffd54f;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.85rem;
-  transition: color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #ffd54f;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
 }
 
 .projectLink:hover {
-  color: #ffeb3b;
-  text-decoration: underline;
+    color: #ffeb3b;
+    text-decoration: underline;
 }
 
 .card p {
@@ -58,49 +125,51 @@
     text-justify: inter-word;
 }
 
+/* ---------- Tools Badges ---------- */
 .tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .badge {
-  background-color: #ffd54f; /* yellow badges to match theme */
-  color: #1e1e1e;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
+    background-color: #ffd54f;
+    color: #1e1e1e;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
 }
 
+/* ---------- Social Links ---------- */
 .socialLinks {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .socialLinks a {
-  font-size: 1.5rem;
-  color: #ffd54f; /* yellow icons to match theme */
-  text-decoration: none;
-  transition: color 0.3s ease;
+    font-size: 1.5rem;
+    color: #ffd54f;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .socialLinks a:hover {
-  color: #ffeb3b;
+    color: #ffeb3b;
 }
 
-/* Responsive layout */
+/* ---------- Responsive Grid ---------- */
 @media (max-width: 1024px) {
-  .projectsGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .projectsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 640px) {
-  .projectsGrid {
-    grid-template-columns: 1fr;
-  }
+    .projectsGrid {
+        grid-template-columns: 1fr;
+    }
 }

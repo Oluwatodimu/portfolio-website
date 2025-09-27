@@ -21,7 +21,7 @@
 .name {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #ffd54f;      
+  color: #ffd54f;
   margin-bottom: 1.5rem;
 }
 
@@ -75,3 +75,53 @@
     font-size: 1rem;
   }
 }
+
+/* 🔹 Breadcrumb container */
+.breadcrumb {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #1e1e1e;        /* same dark background as hero */
+    color: #fcfafa;
+    text-align: left;           /* left-aligned under the menu */
+}
+
+.breadcrumb ol {
+    display: flex;
+    list-style: none;
+    gap: 0.75rem;               /* ⬆️ a little more gap */
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;         /* ⬆️ was 1rem */
+    line-height: 1.6;           /* better vertical rhythm */
+}
+
+.breadcrumb li + li::before {
+    content: "›";               /* separator arrow */
+    color: #ffd54f;             /* your yellow accent */
+    padding: 0 0.6rem;          /* ⬆️ match larger text */
+    font-size: 1.25rem;         /* ⬆️ match text size */
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #e3d3d3;             /* same as social links */
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #ffd54f;             /* yellow on hover for consistency */
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding: 0.8rem 1rem;
+    }
+    .breadcrumb ol {
+        font-size: 1.1rem;      /* ⬆️ slightly bigger than before on mobile */
+    }
+    .breadcrumb li + li::before {
+        font-size: 1.1rem;      /* keep arrow consistent */
+    }
+}
+
+
