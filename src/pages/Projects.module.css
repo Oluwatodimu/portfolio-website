@@ -61,6 +61,31 @@
 @media (max-width: 768px) {
     .heading {
         font-size: 1.75rem;
+        padding-left: 1rem;      /* ✅ added for better mobile alignment */
+        padding-right: 1rem;
+        box-sizing: border-box;
+    }
+}
+
+/* ---------- Optional: Work Experience Heading ---------- */
+/* Use if the Work Experience page uses a separate class name */
+.workHeading {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    color: #ffd54f;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 1rem 0 0;
+}
+
+@media (max-width: 768px) {
+    .workHeading {
+        font-size: 1.75rem;
+        padding-left: 1rem;      /* ✅ ensures proper alignment on small screens */
+        padding-right: 1rem;
+        box-sizing: border-box;
     }
 }
 

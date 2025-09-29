@@ -48,20 +48,22 @@
 
 /* ---------- Heading ---------- */
 .heading {
-    /* Align heading with the work grid cards */
     max-width: 1200px;
-    margin: 0 auto;              /* center heading container */
+    margin: 0 auto;
     background: #1e1e1e;
     color: #ffd54f;
     font-size: 2rem;
     font-weight: 600;
     text-align: left;
-    padding: 1rem 0 0;           /* top padding only, no side padding */
+    padding: 1rem 0 0;      /* top padding only on desktop */
 }
 
 @media (max-width: 768px) {
     .heading {
         font-size: 1.75rem;
+        padding-left: 1rem;  /* ✅ extra horizontal padding for mobile alignment */
+        padding-right: 1rem;
+        box-sizing: border-box;
     }
 }
 
