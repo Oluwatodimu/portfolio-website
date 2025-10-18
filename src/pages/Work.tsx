@@ -47,33 +47,33 @@ const companies = [
             'Played a pivotal role in developing financial services processing $2M+ in user transactions and in migrating from a monolithic system to microservices for improved scalability. Designed and implemented Docker-based containerization and automated CI/CD pipelines with GitHub Actions, increasing deployment frequency, stability, and overall system reliability.',
         thumbnail: stakefairThumb,
     },
-    {
-        name: 'Woodcore',
-        website: 'https://www.woodcore.co/',
-        location: 'San Fransisco, USA',
-        role: 'Backend Engineer (Contract)',
-        description:
-            'Built and maintained scalable backend services and REST APIs. Implemented secure authentication and authorization, containerized applications for efficient multi-environment deployment, and developed CI/CD pipelines for automated, zero-downtime releases. Set up monitoring and logging and deployed microservices on AWS ECS for scalable, reliable operations.',
-        thumbnail: woodcoreThumb,
-    },
-    {
-        name: 'Savespendr',
-        website: 'https://savespendr-web.vercel.app/',
-        location: 'Lagos, Nigeria',
-        role: 'Backend Engineer, Lead (Contract)',
-        description:
-            'Orchestrated the full design, development, and infrastructure setup for the platform, architecting cloud infrastructure and deploying a containerized service on AWS ECS with Fargate. Built automated CI/CD pipelines and followed SOLID principles, thorough code reviews, and OWASP security standards to deliver a secure, scalable, and maintainable foundation.',
-        thumbnail: savespendrThumb,
-    },
-    {
-        name: 'Fintrak Software Limited',
-        website: 'https://www.fintraksoftware.com/',
-        location: 'Lagos, Nigeria',
-        role: 'Backend Engineer (Full-time)',
-        description:
-            'Contributed to a leading credit scoring platform by designing and delivering robust RESTful APIs that powered key backend services. Built, trained, and optimized machine learning models to predict borrower risk, and improved data pipelines and system performance to support accurate, scalable credit assessments.',
-        thumbnail: fintrakThumb,
-    },
+    // {
+    //     name: 'Woodcore',
+    //     website: 'https://www.woodcore.co/',
+    //     location: 'San Fransisco, USA',
+    //     role: 'Backend Engineer (Contract)',
+    //     description:
+    //         'Built and maintained scalable backend services and REST APIs. Implemented secure authentication and authorization, containerized applications for efficient multi-environment deployment, and developed CI/CD pipelines for automated, zero-downtime releases. Set up monitoring and logging and deployed microservices on AWS ECS for scalable, reliable operations.',
+    //     thumbnail: woodcoreThumb,
+    // },
+    // {
+    //     name: 'Savespendr',
+    //     website: 'https://savespendr-web.vercel.app/',
+    //     location: 'Lagos, Nigeria',
+    //     role: 'Backend Engineer, Lead (Contract)',
+    //     description:
+    //         'Orchestrated the full design, development, and infrastructure setup for the platform, architecting cloud infrastructure and deploying a containerized service on AWS ECS with Fargate. Built automated CI/CD pipelines and followed SOLID principles, thorough code reviews, and OWASP security standards to deliver a secure, scalable, and maintainable foundation.',
+    //     thumbnail: savespendrThumb,
+    // },
+    // {
+    //     name: 'Fintrak Software Limited',
+    //     website: 'https://www.fintraksoftware.com/',
+    //     location: 'Lagos, Nigeria',
+    //     role: 'Backend Engineer (Full-time)',
+    //     description:
+    //         'Contributed to a leading credit scoring platform by designing and delivering robust RESTful APIs that powered key backend services. Built, trained, and optimized machine learning models to predict borrower risk, and improved data pipelines and system performance to support accurate, scalable credit assessments.',
+    //     thumbnail: fintrakThumb,
+    // },
 ];
 
 function Work() {
