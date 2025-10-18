@@ -6,9 +6,9 @@ import payuThumb from '../assets/payu-thumb.jpg';
 import flutterwaveThumb from '../assets/flutterwave-thumb.jpg';
 import polarisThumb from '../assets/polaris-thumb.jpg';
 import stakefairThumb from '../assets/stakefair-thumb.jpg';
-import savespendrThumb from '../assets/savespendr-thumb.jpg';
-import fintrakThumb from '../assets/fintrak-thumb.jpg';
-import woodcoreThumb from '../assets/woodcore-thumb.jpg';
+// import savespendrThumb from '../assets/savespendr-thumb.jpg';
+// import fintrakThumb from '../assets/fintrak-thumb.jpg';
+// import woodcoreThumb from '../assets/woodcore-thumb.jpg';
 
 const companies = [
     {
