@@ -14,7 +14,7 @@ function Home() {
 
             <div className={styles.hero}>
                 <div className={styles.heroContent}>
-                    <h1>Backend & Infrastructure Engineer</h1>
+                    <h1 className="pageHeading">Backend & Infrastructure Engineer</h1>
                     <h2 className={styles.name}>Todimu&nbsp;Isewon</h2>
 
                     <p className={styles.summary}>

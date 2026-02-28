@@ -2,15 +2,17 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 250px;
+  width: 260px;
   height: 100%;
-  background-color: #444;
-  color: white;
+  background-color: var(--color-surface, #1a1a1a);
+  border-left: 1px solid var(--color-border, #2a2a2a);
+  color: var(--color-text, #e8e8e8);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: right 0.3s ease;
+  transition: right 0.25s ease;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.3);
 }
 
 .navMenu.open {
@@ -20,16 +22,25 @@
 .navMenu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .navMenu li {
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 }
 
 .navMenu a {
-  color: white;
+  color: var(--color-text, #e8e8e8);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 0;
+  display: block;
+  transition: color 0.2s;
+}
+
+.navMenu a:hover {
+  color: var(--color-accent, #ffd54f);
 }
 
 .closeButton {
@@ -38,11 +49,13 @@
   right: 1rem;
   background: none;
   border: none;
-  color: white;
-  font-size: 1.5rem;
+  color: var(--color-text-muted, #a8a8a8);
+  font-size: 1.25rem;
   cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.2s;
 }
 
 .closeButton:hover {
-  color: #ff4d4d; /* Example hover color for close button */
+  color: var(--color-text, #e8e8e8);
 }

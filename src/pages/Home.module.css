@@ -1,127 +1,124 @@
 .hero {
   min-height: 100vh;
   display: flex;
-  justify-content: center;   /* center the inner container horizontally */
-  align-items: center;       /* center it vertically */
-  background-color: #1e1e1e;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background);
   padding: 2rem;
 }
 
 .heroContent {
-  max-width: 700px;          /* control line length */
+  max-width: 640px;
   width: 100%;
-  text-align: left;          /* keep all text left-aligned */
+  text-align: left;
 }
 
 .heroContent h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
 }
 
 .name {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: #ffd54f;
+  color: var(--color-accent);
   margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
 }
 
-
 .heroContent p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  color: #fcfafa;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
 }
 
 .socialLinks {
   display: flex;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
 }
 
 .socialLinks a {
-  font-size: 1.5rem;
-  color: #e3d3d3;
+  font-size: 1.35rem;
+  color: var(--color-text-muted);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .socialLinks a:hover {
-  color: #0077b5;
+  color: var(--color-primary);
 }
 
 .workButton {
-  padding: 0.8rem 1.5rem;
-  background-color: transparent; /* 🔹 empty inside */
-  color: #ffd54f; /* 🔹 yellow text */
-  border: 2px solid #ffd54f; /* 🔹 yellow outline */
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  background-color: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
   text-decoration: none;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
 .workButton:hover {
-  background-color: #ffd54f; /* 🔹 fill yellow on hover */
-  color: #1e1e1e; /* 🔹 text becomes dark on hover for contrast */
+  background-color: var(--color-accent);
+  color: var(--color-background);
 }
 
-
-@media (max-width: 768px) {
-  .heroContent h1 {
-    font-size: 2rem;
-  }
-  .heroContent p {
-    font-size: 1rem;
-  }
-}
-
-/* 🔹 Breadcrumb container */
 .breadcrumb {
-    width: 100%;
-    padding: 1rem 2rem;
-    background: #1e1e1e;        /* same dark background as hero */
-    color: #fcfafa;
-    text-align: left;           /* left-aligned under the menu */
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  background: var(--color-background);
+  color: var(--color-text);
+  text-align: left;
 }
 
 .breadcrumb ol {
-    display: flex;
-    list-style: none;
-    gap: 0.75rem;               /* ⬆️ a little more gap */
-    margin: 0;
-    padding: 0;
-    font-size: 1.25rem;         /* ⬆️ was 1rem */
-    line-height: 1.6;           /* better vertical rhythm */
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
 }
 
 .breadcrumb li + li::before {
-    content: "›";               /* separator arrow */
-    color: #ffd54f;             /* your yellow accent */
-    padding: 0 0.6rem;          /* ⬆️ match larger text */
-    font-size: 1.25rem;         /* ⬆️ match text size */
+  content: "›";
+  color: var(--color-accent);
+  padding: 0 0.4rem;
 }
 
 .breadcrumb a {
-    text-decoration: none;
-    color: #e3d3d3;             /* same as social links */
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
 }
 
 .breadcrumb a:hover {
-    color: #ffd54f;             /* yellow on hover for consistency */
+  color: var(--color-accent);
 }
 
 @media (max-width: 768px) {
-    .breadcrumb {
-        padding: 0.8rem 1rem;
-    }
-    .breadcrumb ol {
-        font-size: 1.1rem;      /* ⬆️ slightly bigger than before on mobile */
-    }
-    .breadcrumb li + li::before {
-        font-size: 1.1rem;      /* keep arrow consistent */
-    }
+  .heroContent h1 {
+    font-size: 1.6rem;
+  }
+  .name {
+    font-size: 1.35rem;
+  }
+  .heroContent p {
+    font-size: 0.95rem;
+  }
+  .breadcrumb {
+    padding: 0.75rem 1rem;
+  }
 }
 
 

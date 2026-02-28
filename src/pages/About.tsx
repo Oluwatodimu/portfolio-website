@@ -29,7 +29,7 @@ function About() {
 
                     {/* Text block */}
                     <div className={styles.textBlock}>
-                        <h1 className={styles.heading}>About Me</h1>
+                        <h1 className={`${styles.heading} pageHeading`}>About Me</h1>
                         <p className={styles.tagline}>
                             Engineering the Unseen: Backend Systems &amp; Infrastructure
                         </p>
@@ -37,15 +37,6 @@ function About() {
                         <p className={styles.description}>
                             I&apos;m a backend engineer with over four years of experience building and optimizing
                             the core platforms that power financial technology leaders like{' '}
-                            <a
-                                href="https://corporate.payu.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={styles.companyLink}
-                            >
-                                PayU
-                            </a>{' '}
-                            and{' '}
                             <a
                                 href="https://flutterwave.com/ng/"
                                 target="_blank"

@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import styles from './Work.module.css';
 
 // import images
-import payuThumb from '../assets/payu-thumb.jpg';
 import flutterwaveThumb from '../assets/flutterwave-thumb.jpg';
 import polarisThumb from '../assets/polaris-thumb.jpg';
 import stakefairThumb from '../assets/stakefair-thumb.jpg';
@@ -12,21 +11,12 @@ import stakefairThumb from '../assets/stakefair-thumb.jpg';
 
 const companies = [
     {
-        name: 'PayU',
-        website: 'https://corporate.payu.com/',
-        location: 'Amsterdam, North Holland',
-        role: 'Backend Engineer (Full-time)',
-        description:
-            'Scaled a $150K+/day transaction platform 1.5× with an asynchronous, event-driven architecture while cutting latency 30% through caching and database optimizations. Designed real-time monitoring that halved critical incident response time and strengthened overall reliability through targeted DevOps improvements.',
-        thumbnail: payuThumb,
-    },
-    {
         name: 'Flutterwave',
         website: 'https://flutterwave.com/ng/',
         location: 'San Fransisco, USA',
         role: 'Backend Engineer (Full-time)',
         description:
-            'Developed secure, high-performance backend services for a global financial platform. Built centralized authorization, a compliance app screening 150K+ entities daily, and a real-time decisioning system handling millions of transactions for instant risk assessment and 50% lower costs. Boosted performance and resilience with advanced caching, parallel processing, and fault-tolerant design.',
+            'Backend services for a global payments platform. Built centralized auth, compliance screening for 150K+ entities daily, and real-time decisioning that cut costs by 50%. Caching and fault-tolerant design.',
         thumbnail: flutterwaveThumb,
     },
     {
@@ -35,7 +25,7 @@ const companies = [
         location: 'Lagos, Nigeria',
         role: 'Backend Engineer (Full-time)',
         description:
-            'Developed and maintained backend systems for enterprise GIS clients, creating CI/CD pipelines that automated build, test, and deployment to GCP App Engine, boosting release speed and reliability. Implemented key security upgrades for an Address Management Platform, cutting brute-force attack risk and improving overall performance.',
+            'Backend systems for enterprise GIS clients. Built CI/CD pipelines for GCP App Engine and delivered security upgrades for an Address Management Platform, reducing brute-force attack risk.',
         thumbnail: polarisThumb,
     },
     {
@@ -44,7 +34,7 @@ const companies = [
         location: 'Senkang, Singapore',
         role: 'Backend Engineer (Full-time)',
         description:
-            'Played a pivotal role in developing financial services processing $2M+ in user transactions and in migrating from a monolithic system to microservices for improved scalability. Designed and implemented Docker-based containerization and automated CI/CD pipelines with GitHub Actions, increasing deployment frequency, stability, and overall system reliability.',
+            'Financial services processing $2M+ in transactions. Led monolith-to-microservices migration and built Docker-based deployment with GitHub Actions CI/CD for improved reliability.',
         thumbnail: stakefairThumb,
     },
     // {
@@ -89,14 +79,16 @@ function Work() {
                 </ol>
             </nav>
 
-            {/* 🔹 Heading */}
-            <h1 className={styles.heading}>Work Experience</h1>
-
-            {/* 🔹 Work Grid */}
-            <div className={styles.workGrid}>
+            <div className={styles.pageContent}>
+                <h1 className={`${styles.heading} pageHeading`}>Work Experience</h1>
+                <div className={styles.workGrid}>
                 {companies.map((company, index) => (
                     <div key={index} className={styles.card}>
-                        <img src={company.thumbnail} alt={`${company.name} thumbnail`} />
+                        <img
+                            src={company.thumbnail}
+                            alt={`${company.name} thumbnail`}
+                            className={styles.cardImage}
+                        />
                         <div className={styles.cardContent}>
                             <h3>{company.name}</h3>
                             <a
@@ -117,6 +109,7 @@ function Work() {
                         </div>
                     </div>
                 ))}
+                </div>
             </div>
         </>
     );

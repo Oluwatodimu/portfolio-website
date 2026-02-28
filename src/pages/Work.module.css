@@ -1,165 +1,141 @@
-/* ---------- Breadcrumb ---------- */
 .breadcrumb {
-    width: 100%;
-    padding: 1rem 2rem;
-    background: #1e1e1e;
-    color: #fcfafa;
-    text-align: left;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  background: var(--color-background);
+  color: var(--color-text-muted);
+  text-align: left;
 }
 
 .breadcrumb ol {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1.6;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .breadcrumb li + li::before {
-    content: "›";
-    color: #ffd54f;
-    padding: 0 0.6rem;
-    font-size: 1.25rem;
+  content: "›";
+  color: var(--color-accent);
+  padding: 0 0.4rem;
 }
 
 .breadcrumb a {
-    text-decoration: none;
-    color: #e3d3d3;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
 }
 
 .breadcrumb a:hover {
-    color: #ffd54f;
+  color: var(--color-accent);
 }
 
-@media (max-width: 768px) {
-    .breadcrumb {
-        padding: 0.8rem 1rem;
-    }
-    .breadcrumb ol {
-        font-size: 1.1rem;
-    }
-    .breadcrumb li + li::before {
-        font-size: 1.1rem;
-    }
+.pageContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-/* ---------- Heading ---------- */
 .heading {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #1e1e1e;
-    color: #ffd54f;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: left;
-    padding: 1rem 0 0;      /* top padding only on desktop */
+  padding: 1.25rem 0 0;
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
 }
 
-@media (max-width: 768px) {
-    .heading {
-        font-size: 1.75rem;
-        padding-left: 1rem;  /* ✅ extra horizontal padding for mobile alignment */
-        padding-right: 1rem;
-        box-sizing: border-box;
-    }
-}
-
-/* ---------- Work Grid ---------- */
 .workGrid {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    padding: 2rem;
-    background-color: #1e1e1e;
-    color: #f5f5f5;
-    min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 1.5rem 0;
+  min-height: 100vh;
+  align-items: start;
 }
 
-/* ---------- Card ---------- */
 .card {
-    background-color: #2a2a2a;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  background-color: var(--color-surface-elevated, #222);
+  border: 1px solid var(--color-border, #2a2a2a);
+  border-radius: 8px;
+  padding: 1.25rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
 }
 
-/* ---------- Thumbnail ---------- */
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    object-position: top;
-    display: block;
-    border-radius: 8px 8px 0 0;
+.cardImage {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: block;
 }
 
-/* ---------- Card Content ---------- */
 .cardContent {
-    padding: 1.5rem;
+  padding: 0;
 }
 
 .card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.3rem;
-    color: #f5f5f5;
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+  font-weight: 600;
 }
 
 .companyLink {
-    display: inline-block;
-    margin-bottom: 0.8rem;
-    color: #ffd54f;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.85rem;
-    transition: color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: color 0.2s ease;
 }
 
 .companyLink:hover {
-    color: #ffeb3b;
-    text-decoration: underline;
+  color: var(--color-accent-hover);
 }
 
 .card p {
-    margin: 0.5rem 0;
-    color: #ccc;
-    font-size: 0.9rem;
-    text-align: justify;
-    text-justify: inter-word;
+  margin: 0.4rem 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
 }
 
 .meta {
-    font-size: 0.8rem;
-    color: #ccc;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
 }
 
 .card p strong {
-    color: #fff;
+  color: var(--color-text);
 }
 
-/* ---------- Responsive Grid ---------- */
 @media (max-width: 1024px) {
-    .workGrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .workGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 640px) {
-    .workGrid {
-        grid-template-columns: 1fr;
-    }
+  .pageContent {
+    padding: 0 1rem;
+  }
+  .workGrid {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+  .heading {
+    font-size: 1.35rem;
+  }
 }
