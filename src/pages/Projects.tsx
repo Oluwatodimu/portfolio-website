@@ -46,11 +46,9 @@ function Projects() {
                 </ol>
             </nav>
 
-            {/* 🔹 Page Heading */}
-            <h1 className={styles.heading}>Projects</h1>
-
-            {/* 🔹 Project Cards */}
-            <div className={styles.projectsGrid}>
+            <div className={styles.pageContent}>
+                <h1 className={`${styles.heading} pageHeading`}>Projects</h1>
+                <div className={styles.projectsGrid}>
                 {projects.map((project, index) => (
                     <div key={index} className={styles.card}>
                         <img
@@ -103,6 +101,7 @@ function Projects() {
                         </div>
                     </div>
                 ))}
+                </div>
             </div>
         </>
     );

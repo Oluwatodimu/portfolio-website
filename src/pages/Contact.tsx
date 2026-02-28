@@ -29,7 +29,7 @@ function Contact() {
 
                     {/* === Text column (right) === */}
                     <div className={styles.textBlock}>
-                        <h1 className={styles.heading}>Get in Touch</h1>
+                        <h1 className={`${styles.heading} pageHeading`}>Get in Touch</h1>
                         <p className={styles.description}>
                             I’d love to hear from you! Whether it’s about opportunities,
                             collaborations, or just a tech chat, feel free to reach out.
