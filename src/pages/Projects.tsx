@@ -7,14 +7,14 @@ import projectBThumb from '../assets/ai.jpg';
 import projectCThumb from '../assets/nuban.jpg';
 
 const projects = [
-
-    title: 'SaveSpendr',
-    link: 'https://github.com/Oluwatodimu/savespendr-v2',
-    description:
-        'Microservices-based financial platform with user management, merchants, wallets, and multi-currency support. Integrated Keycloak for OAuth 2.0/OIDC authentication and JWT validation, with an API Gateway for routing and role-based access control (RBAC) across services.',
-    tools: ['Spring Boot', 'Keycloak', 'Spring Cloud Gateway', 'Docker', 'MySQL', 'OpenFeign'],
-    thumbnail: projectAThumb,
-},
+    {
+        title: 'SaveSpendr',
+        link: 'https://github.com/Oluwatodimu/savespendr-v2',
+        description:
+            'Microservices-based financial platform with user management, merchants, wallets, and multi-currency support. Integrated Keycloak for OAuth 2.0/OIDC authentication and JWT validation, with an API Gateway for routing and role-based access control (RBAC) across services.',
+        tools: ['Spring Boot', 'Keycloak', 'Spring Cloud Gateway', 'Docker', 'MySQL', 'OpenFeign'],
+        thumbnail: projectAThumb,
+    },
     {
         title: 'Conversational SQL with Gemini Pro',
         link: 'https://medium.com/codex/conversational-sql-enabling-user-friendly-database-interactions-with-gemini-pro-2e26c9828723',
