@@ -1,30 +1,49 @@
+.breadcrumb {
+  width: 100%;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem 0;
+  background: transparent;
+  color: var(--color-text-muted);
+  text-align: left;
+}
+.breadcrumb ol {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  font-family: var(--ff-mono);
+  font-size: 0.8rem;
+}
+.breadcrumb li + li::before { content: "/"; color: var(--color-text-faint); padding: 0 0.4rem; }
+.breadcrumb a { text-decoration: none; color: var(--color-text-muted); transition: color 0.2s ease; }
+.breadcrumb a:hover { color: var(--color-accent); }
+.breadcrumb li[aria-current] { color: var(--color-text); }
+
 .contact {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: var(--color-background);
-  padding: 2rem;
+  padding: 3rem 1.5rem 4rem;
 }
 
 .content {
   display: flex;
   align-items: stretch;
-  gap: 2rem;
-  max-width: 800px;
+  gap: 2.75rem;
+  max-width: 860px;
   width: 100%;
 }
 
-.imageWrapper {
-  flex-shrink: 0;
-}
+.imageWrapper { flex-shrink: 0; }
 
 .profileImage {
-  width: 280px;
+  width: 300px;
   max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
+  border-radius: var(--radius);
   object-fit: cover;
+  border: 1px solid var(--color-border);
 }
 
 .textBlock {
@@ -33,10 +52,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 0;
 }
 
 .heading {
-  font-size: 1.5rem;
+  font-size: clamp(1.7rem, 3.4vw, 2.2rem);
   font-weight: 600;
   margin-bottom: 0.75rem;
   color: var(--color-text);
@@ -44,102 +64,46 @@
 
 .description {
   font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1.25rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
   color: var(--color-text-muted);
+  max-width: 52ch;
 }
 
 .email {
-  display: inline-block;
-  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--ff-mono);
+  font-size: 0.9rem;
   color: var(--color-accent);
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--color-accent);
-  border-radius: 6px;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
   transition: all 0.2s ease;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.6rem;
   width: fit-content;
 }
+.email:hover { border-color: var(--color-accent); background-color: var(--color-accent-soft); color: var(--color-accent-hover); }
 
-.email:hover {
-  background-color: var(--color-accent);
-  color: var(--color-background);
-}
-
-.socialLinks {
-  display: flex;
-  gap: 1rem;
-}
-
+.socialLinks { display: flex; gap: 0.6rem; }
 .socialLinks a {
-  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  font-size: 1.05rem;
   color: var(--color-text-muted);
-  transition: color 0.2s ease;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transition: all 0.18s ease;
 }
-
-.socialLinks a:hover {
-  color: var(--color-primary);
-}
-
-.breadcrumb {
-  width: 100%;
-  padding: 0.9rem 1.5rem;
-  background: var(--color-background);
-  color: var(--color-text-muted);
-  text-align: left;
-}
-
-.breadcrumb ol {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-}
-
-.breadcrumb li + li::before {
-  content: "›";
-  color: var(--color-accent);
-  padding: 0 0.4rem;
-}
-
-.breadcrumb a {
-  text-decoration: none;
-  color: var(--color-text-muted);
-  transition: color 0.2s ease;
-}
-
-.breadcrumb a:hover {
-  color: var(--color-accent);
-}
+.socialLinks a:hover { color: var(--color-accent); border-color: var(--color-accent); transform: translateY(-2px); }
 
 @media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .textBlock {
-    text-align: center;
-    align-items: center;
-  }
-
-  .profileImage {
-    width: 200px;
-    margin-bottom: 1.25rem;
-  }
-
-  .heading {
-    font-size: 1.35rem;
-  }
-
-  .description,
-  .email {
-    font-size: 0.9rem;
-  }
+  .content { flex-direction: column; align-items: flex-start; gap: 1.75rem; }
+  .profileImage { width: 220px; height: auto; }
 }
-

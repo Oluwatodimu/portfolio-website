@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './NavMenu.module.css';
 
 interface NavMenuProps {
@@ -6,33 +6,43 @@ interface NavMenuProps {
     toggleMenu: () => void;
 }
 
+const links = [
+    { to: '/', label: 'Home', end: true },
+    { to: '/about', label: 'About' },
+    { to: '/work', label: 'Work' },
+    { to: '/projects', label: 'Projects' },
+    { to: '/blogs', label: 'Blogs' },
+    { to: '/contact', label: 'Contact' },
+];
+
 function NavMenu({ isOpen, toggleMenu }: NavMenuProps) {
     return (
-        <nav className={`${styles.navMenu} ${isOpen ? styles.open : ''}`}>
-            <button className={styles.closeButton} onClick={toggleMenu} aria-label="Close Menu">
-                ✕
-            </button>
-            <ul>
-                <li>
-                    <Link to="/" onClick={toggleMenu}>Home</Link>
-                </li>
-                <li>
-                    <Link to="/about" onClick={toggleMenu}>About</Link>
-                </li>
-                <li>
-                    <Link to="/work" onClick={toggleMenu}>Work</Link>
-                </li>
-                <li>
-                    <Link to="/projects" onClick={toggleMenu}>Projects</Link>
-                </li>
-                <li>
-                    <Link to="/blogs" onClick={toggleMenu}>Blogs</Link>
-                </li>
-                <li>
-                    <Link to="/contact" onClick={toggleMenu}>Contact</Link>
-                </li>
-            </ul>
-        </nav>
+        <>
+            <div
+                className={`${styles.backdrop} ${isOpen ? styles.show : ''}`}
+                onClick={toggleMenu}
+                aria-hidden="true"
+            />
+            <nav className={`${styles.navMenu} ${isOpen ? styles.open : ''}`} aria-label="Mobile">
+                <button className={styles.closeButton} onClick={toggleMenu} aria-label="Close menu">
+                    ✕
+                </button>
+                <ul>
+                    {links.map((l) => (
+                        <li key={l.to}>
+                            <NavLink
+                                to={l.to}
+                                end={l.end}
+                                onClick={toggleMenu}
+                                className={({ isActive }) => (isActive ? styles.active : '')}
+                            >
+                                {l.label}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        </>
     );
 }
 

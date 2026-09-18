@@ -1,47 +1,55 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 140;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.backdrop.show { opacity: 1; visibility: visible; }
+
 .navMenu {
   position: fixed;
   top: 0;
   right: -100%;
   width: 260px;
+  max-width: 80vw;
   height: 100%;
-  background-color: var(--color-surface, #1a1a1a);
-  border-left: 1px solid var(--color-border, #2a2a2a);
-  color: var(--color-text, #e8e8e8);
+  z-index: 150;
+  background-color: var(--color-surface);
+  border-left: 1px solid var(--color-border);
+  color: var(--color-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: right 0.25s ease;
-  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.3);
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.35);
 }
-
-.navMenu.open {
-  right: 0;
-}
+.navMenu.open { right: 0; }
 
 .navMenu ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
-.navMenu li {
-  margin: 0.75rem 0;
-}
+.navMenu li { margin: 0.6rem 0; }
 
 .navMenu a {
-  color: var(--color-text, #e8e8e8);
+  color: var(--color-text-muted);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 500;
   padding: 0.4rem 0;
   display: block;
   transition: color 0.2s;
 }
-
-.navMenu a:hover {
-  color: var(--color-accent, #ffd54f);
-}
+.navMenu a:hover { color: var(--color-text); }
+.navMenu a.active { color: var(--color-accent); }
 
 .closeButton {
   position: absolute;
@@ -49,13 +57,10 @@
   right: 1rem;
   background: none;
   border: none;
-  color: var(--color-text-muted, #a8a8a8);
+  color: var(--color-text-faint);
   font-size: 1.25rem;
   cursor: pointer;
   padding: 0.25rem;
   transition: color 0.2s;
 }
-
-.closeButton:hover {
-  color: var(--color-text, #e8e8e8);
-}
+.closeButton:hover { color: var(--color-text); }
