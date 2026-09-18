@@ -8,6 +8,14 @@ import projectCThumb from '../assets/nuban.jpg';
 
 const projects = [
     {
+        title: 'Keycloak Production Setup',
+        link: 'https://github.com/Oluwatodimu/keycloak-setup',
+        description:
+            'A production-style single-node Keycloak deployment on AWS, running Keycloak behind an NGINX reverse proxy with TLS termination. Containerized with Docker for reproducible, secure identity and access management, and documented as a step-by-step guide.',
+        tools: ['Keycloak', 'Docker', 'Docker Compose', 'NGINX', 'TLS', 'AWS'],
+        thumbnail: projectAThumb,
+    },
+    {
         title: 'SaveSpendr',
         link: 'https://github.com/Oluwatodimu/savespendr-v2',
         description:

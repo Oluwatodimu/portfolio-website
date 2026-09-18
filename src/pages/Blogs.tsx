@@ -3,6 +3,13 @@ import styles from './Blogs.module.css';
 
 const articles = [
     {
+        title: 'Deploying Keycloak on AWS: A Production-Style Single-Node Setup',
+        link: 'https://medium.com/codex/deploying-keycloak-in-production-style-single-node-setup-with-docker-nginx-and-tls-c4375b3d255c',
+        excerpt: 'A production-style single-node Keycloak deployment on AWS using Docker, NGINX as a reverse proxy, and TLS for secure authentication.',
+        source: 'Medium',
+        date: '2026',
+    },
+    {
         title: 'Conversational SQL with Gemini Pro',
         link: 'https://medium.com/codex/conversational-sql-enabling-user-friendly-database-interactions-with-gemini-pro-2e26c9828723',
         excerpt: 'Enabling non-technical users to interact with MySQL databases by converting natural language to SQL using Gemini-Pro.',
