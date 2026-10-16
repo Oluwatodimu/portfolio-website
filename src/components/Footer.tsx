@@ -17,7 +17,7 @@ function Footer() {
             <div className={styles.inner}>
                 <Link to="/" className={styles.logo}>
                     <span className={styles.dot} />
-                    todimu.dev
+                    todimu.net
                 </Link>
 
                 <nav className={styles.links} aria-label="Footer">
