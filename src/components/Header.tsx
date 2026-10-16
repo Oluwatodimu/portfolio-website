@@ -20,7 +20,7 @@ function Header() {
       <div className={styles.inner}>
         <Link to="/" className={styles.logo} aria-label="Home">
           <span className={styles.dot} />
-          todimu.dev
+          todimu.net
         </Link>
 
         <nav className={styles.desktopNav} aria-label="Primary">

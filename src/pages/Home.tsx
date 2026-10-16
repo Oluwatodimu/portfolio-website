@@ -14,11 +14,6 @@ function Home() {
         <>
             <section className={styles.hero}>
                 <div className={styles.heroInner}>
-                    <span className={styles.avail}>
-                        <span className={styles.pulse} />
-                        Available for backend &amp; infra work
-                    </span>
-
                     <h1 className={styles.title}>
                         Backend &amp; <span className={styles.accent}>Infrastructure</span> Engineer
                     </h1>
