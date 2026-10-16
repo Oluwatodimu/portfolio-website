@@ -3,6 +3,7 @@ import styles from './Work.module.css';
 
 // import images
 import flutterwaveThumb from '../assets/flutterwave-thumb.jpg';
+import fluxmapThumb from '../assets/fluxmap-thumb.jpg';
 import polarisThumb from '../assets/polaris-thumb.jpg';
 import stakefairThumb from '../assets/stakefair-thumb.jpg';
 // import savespendrThumb from '../assets/savespendr-thumb.jpg';
@@ -18,6 +19,15 @@ const companies = [
         description:
             'Backend services for a global payments platform. Built centralized auth, compliance screening for 150K+ entities daily, and real-time decisioning that cut costs by 50%. Caching and fault-tolerant design.',
         thumbnail: flutterwaveThumb,
+    },
+    {
+        name: 'Fluxmap',
+        website: 'https://fluxmap.io/',
+        location: 'Remote',
+        role: 'Software Engineer, Product & Infrastructure (Contract)',
+        description:
+            'AI-powered financial intelligence platform. Helping scale the product beyond MVP: rolled out distributed tracing across 11 NestJS microservices and brought Cloud Run services under Terraform with shared secrets.',
+        thumbnail: fluxmapThumb,
     },
     {
         name: 'Polaris Digitech Limited',

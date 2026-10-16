@@ -8,11 +8,11 @@ import projectCThumb from '../assets/nuban.jpg';
 
 const projects = [
     {
-        title: 'Keycloak in Practice',
+        title: 'Production-Grade IAM with Keycloak',
         link: 'https://github.com/Oluwatodimu/keycloak-setup',
         description:
-            'Production-style Keycloak 26 on AWS (single node, NGINX + TLS), plus a highly available 3-node cluster with Docker Compose, an NGINX load balancer and distributed Infinispan caches. Built a custom login and email theme, and a Java SPI event listener that streams login events to Kafka without slowing down sign-ins. Documented end to end in a 30-page guide.',
-        tools: ['Keycloak', 'Java', 'Kafka', 'Infinispan', 'Docker Compose', 'NGINX', 'MySQL', 'AWS'],
+            'IAM platform on Keycloak 26 serving OAuth 2.0 / OIDC sign-in: a highly available 3-node cluster behind NGINX, an optimized Docker image, a custom login and email theme, and a Java SPI that streams auth events to Kafka.',
+        tools: ['Keycloak', 'OAuth 2.0 / OIDC', 'Java', 'Kafka', 'Docker', 'NGINX'],
         thumbnail: projectAThumb,
     },
     {
