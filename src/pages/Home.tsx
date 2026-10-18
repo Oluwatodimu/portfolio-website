@@ -3,8 +3,8 @@ import styles from './Home.module.css';
 import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
 
 const skills = [
-    { group: 'Languages', items: ['Java', 'TypeScript', 'Go', 'JavaScript', 'Python'] },
-    { group: 'Backend', items: ['Spring Boot', 'NestJS', 'Kafka', 'Redis', 'REST APIs'] },
+    { group: 'Languages', items: ['Java', 'Python', 'Go'] },
+    { group: 'Backend', items: ['Spring Boot', 'Django', 'FastAPI', 'Gin', 'Kafka', 'Redis', 'REST APIs'] },
     { group: 'Cloud & DevOps', items: ['AWS ECS', 'Docker', 'Keycloak', 'NGINX', 'CI/CD'] },
     { group: 'Data', items: ['PostgreSQL', 'MySQL', 'RDS', 'Redis'] },
 ];
@@ -25,7 +25,7 @@ function Home() {
                         <strong>scalable, secure, and performant</strong> under extreme load, from
                         initial concept to production deployment. My core expertise is in{' '}
                         <strong>Java</strong>, with strong proficiency in{' '}
-                        <strong>JavaScript</strong>, <strong>TypeScript</strong>, and{' '}
+                        <strong>Python</strong> and{' '}
                         <strong>Go</strong>.
                     </p>
 

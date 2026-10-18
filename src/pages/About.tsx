@@ -63,7 +63,7 @@ function About() {
                         <h2 className={styles.subheading}>Key Areas of Expertise:</h2>
                         <ul className={styles.expertiseList}>
                             <li>
-                                <strong>High-Performance Backends:</strong> Java, Typescript, Go, Kafka, Redis.
+                                <strong>High-Performance Backends:</strong> Java, Python, Go, Kafka, Redis.
                             </li>
                             <li>
                                 <strong>Cloud &amp; DevOps:</strong> AWS (ECS Fargate, RDS, Lambda), Docker,
