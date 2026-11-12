@@ -47,7 +47,7 @@ function Contact() {
                                 <FaGithub />
                             </a>
                             <a
-                                href="https://www.linkedin.com/in/todimu-i-1a83b7159/"
+                                href="https://www.linkedin.com/in/todimu-isewon/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
