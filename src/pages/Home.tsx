@@ -39,7 +39,7 @@ function Home() {
                         <Link to="/contact" className={styles.btnGhost}>Get in Touch</Link>
                         <span className={styles.socials}>
                             <a href="https://github.com/Oluwatodimu" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
-                            <a href="https://www.linkedin.com/in/todimu-i-1a83b7159/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
+                            <a href="https://www.linkedin.com/in/todimu-isewon/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
                             <a href="https://medium.com/@todimu_isewon" target="_blank" rel="noopener noreferrer" aria-label="Medium"><FaMedium /></a>
                         </span>
                     </div>
